@@ -1,3 +1,4 @@
+import cors from 'cors';
 import express from 'express';
 import db from './model/index.js';
 import { routeTubo } from './routes/tubo.routes.js';
@@ -5,6 +6,7 @@ import { routeTubo } from './routes/tubo.routes.js';
 export const app = express();
 
 app.use(express.json());
+app.use(cors())
 app.use(express.urlencoded({extended:true}))
 
 db.connection.sync()
