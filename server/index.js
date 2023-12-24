@@ -11,7 +11,7 @@ app.use(express.urlencoded({extended:true}))
 
 db.connection.sync()
 .then(()=>{
-    console.log("Sincronizando com o banco de dados...");
+    console.log("Banco de dados sincronizado...");
 })
 .catch(err=>{
     console.log("Falha na sincronização com o banco de dados.", err.message);
@@ -24,7 +24,7 @@ app.get('/',(_,response)=>{
 
 routeTubo(app)
 
-const host = process.env.PGHOST || 'localhost';
+const host = process.env.PGHOST;
 const port = 5000;
 
 

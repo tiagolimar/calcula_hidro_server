@@ -14,19 +14,21 @@ export const tuboController = {
         })
     },
 
-    createAll: (request,response)=>{
+    createAll: async (request,response)=>{
         let datas = []
         let tubos = request.body.sort((a,b)=>a.id-b.id)
-        for (let tubo of tubos) {
-            Tubo.create(tubo)
-            .then(data=>{
-                datas.push(data);
-            })
-            .catch(e=>{
-                response.status(500).send({message : e.message || "Os tubos não pôde ser criado."});
-            })
+        let success = 0
+
+        for (let tubo_ of tubos) {
+            const {id,...tubo} = tubo_
+            try {
+                const data = await Tubo.create(tubo)
+                success += 1;
+            } catch (error) {
+                response.status(500).send({message : e.message || `O tubo ${id} não pôde ser criado.`});
+            }
         }
-        response.send(datas);
+        response.send(`${success} tubos adicionados com sucesso.`);
     },
 
     findAll: (_,response)=>{
