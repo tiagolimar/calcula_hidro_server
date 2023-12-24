@@ -19,7 +19,7 @@ const router = createBrowserRouter([
                 errorElement: <Error />,
             },
             {
-                path: "/tubos",
+                path: "/Tubos",
                 element: <Tubos />,
                 errorElement: <Error />,
             },
