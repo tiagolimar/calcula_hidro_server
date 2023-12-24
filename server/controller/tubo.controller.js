@@ -16,7 +16,8 @@ export const tuboController = {
 
     createAll: (request,response)=>{
         let datas = []
-        for (let tubo of request.body) {
+        let tubos = request.body.sort((a,b)=>a.id-b.id)
+        for (let tubo of tubos) {
             Tubo.create(tubo)
             .then(data=>{
                 datas.push(data);
