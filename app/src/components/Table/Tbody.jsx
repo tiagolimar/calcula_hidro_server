@@ -4,7 +4,6 @@ import { objToString } from '../objToString';
 
 const btnEditar = (item) => (
     <td key={"x" + item} className="align-middle">
-        <Link className="btn btn-outline-primary w-100" to={`/usuarios/${item}`}>Editar</Link>
         <Link className="btn btn-outline-danger w-100 mt-2" to={`/usuarios/${item}`}>Excluir</Link>
     </td>
 );
