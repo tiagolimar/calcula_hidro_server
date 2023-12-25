@@ -12,7 +12,7 @@ export const Footer = () => {
                     </a>
                 </div>
                 <div>Tiago Lima</div>
-                <div className="me-4">Última Atualização: 23/12/2023</div>
+                <div className="me-4">Última Atualização: 25/12/2023</div>
             </div>
         </footer>
     );

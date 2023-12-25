@@ -26,7 +26,6 @@ function FormPipe() {
         try {
             const result = await axios.post(URL_POST, values);
             if (result.status === 200) {
-                console.log('enviado');
                 toast.success("Tubo cadastrado com sucesso!");
             } else {
                 console.log('Erro na resposta:', result.status);

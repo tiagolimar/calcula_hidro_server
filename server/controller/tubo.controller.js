@@ -19,7 +19,7 @@ export const tuboController = {
         let tubos = []
         let success = 0
         
-        if (request.body.isArray()){
+        if (Array.isArray(request.body)){
             tubos = request.body.sort((a,b)=>a.id-b.id)
         }else{
             tubos = [request.body]
