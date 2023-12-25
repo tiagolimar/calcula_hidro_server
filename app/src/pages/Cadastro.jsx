@@ -5,7 +5,7 @@ function Cadastro() {
         <div>
             <FormPipe />
             <div className="container d-flex justify-content-center mt-4">
-            <img src="./assets/perfil_tubo.png" alt="perfil de um tubo" />
+            <img src="/perfil_tubo.png" alt="perfil de um tubo" />
 
             </div>
         </div>
