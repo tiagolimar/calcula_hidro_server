@@ -16,8 +16,14 @@ export const tuboController = {
 
     createAll: async (request,response)=>{
         let datas = []
-        let tubos = request.body.sort((a,b)=>a.id-b.id)
+        let tubos = []
         let success = 0
+        
+        if (request.body.isArray()){
+            tubos = request.body.sort((a,b)=>a.id-b.id)
+        }else{
+            tubos = [request.body]
+        }
 
         for (let tubo_ of tubos) {
             const {id,...tubo} = tubo_
