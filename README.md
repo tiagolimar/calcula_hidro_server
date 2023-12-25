@@ -1,7 +1,7 @@
 # Calcula Hidro Server
 
-Veja o projeto funcionando no link abaixo:
-[CalculaHidro Server](https://calcula-hidro-server.vercel.app/)
+Veja o projeto funcionando no link:
+[CalculaHidro Server](https://calcula-hidro-server.vercel.app/){:target="_blank"}
 
 ## Descrição do Projeto:
 
