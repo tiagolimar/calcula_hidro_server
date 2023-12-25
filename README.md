@@ -44,7 +44,6 @@ Este projeto serve como um ponto de partida para aprender e praticar conceitos e
 - [Node.js](https://nodejs.org/)
 - [Express](https://expressjs.com/)
 - [Sequelize](https://sequelize.org/)
-- [MySQL2](https://www.npmjs.com/package/mysql2)
 - [Cors](https://www.npmjs.com/package/cors)
 - [Dotenv](https://www.npmjs.com/package/dotenv)
 - [Nodemon](https://www.npmjs.com/package/nodemon)
